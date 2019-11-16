@@ -1,4 +1,6 @@
 ### GithubWebSearch
+[![Build Status](https://travis-ci.org/ktarasz/task.svg?branch=master)](https://travis-ci.org/ktarasz/task)
+
 GitHub web crawler based on the GitHub search
 
 ```python
