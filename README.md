@@ -1,4 +1,4 @@
-###GithubWebSearch
+### GithubWebSearch
 GitHub web crawler based on the GitHub search
 
 **keywords**
@@ -19,7 +19,8 @@ Enable collect extra artifacts for Repositories. Enabled by default.
 **proxies**
 
 List of proxies
-####Instalation
+
+#### Instalation
 Install with pip into python (virtual environment) extra `requrements.txt`:
 ```bash
 $ virtualenv -p python3 venv
@@ -28,7 +29,7 @@ $ source venv/bin/activate
 $ pip install -r requirements.txt
 ```
 
-####Examples
+#### Examples
 ##### Case 1
 Python code
 ```python
