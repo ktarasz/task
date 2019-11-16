@@ -1,24 +1,38 @@
 ### GithubWebSearch
 GitHub web crawler based on the GitHub search
 
-**keywords**
+```python
+from crawler import GithubWebSearch
 
-List of keywords to be used as search terms
+GithubWebSearch(
+    keywords, 
+    object_type,
+    extra,
+    proxies
+)
 
-**object_type**
+for batch in crawler_instance:
+    somejob(batch)
+```
+#### Arguments
+* **keywords**
 
-The type of object we are searching for
-* Repositories
-* Issues
-* Wikis
+    List of keywords to be used as search terms
 
-**extra**
+* **object_type**
 
-Enable collect extra artifacts for Repositories. Enabled by default.
+    The type of object we are searching for
+    * Repositories
+    * Issues
+    * Wikis
 
-**proxies**
+* **extra**
 
-List of proxies
+    Enable collect extra artifacts for Repositories. Enabled by default.
+
+* **proxies**
+
+    List of proxies
 
 #### Instalation
 Install with pip into python (virtual environment) extra `requrements.txt`:

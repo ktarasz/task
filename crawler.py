@@ -1,4 +1,4 @@
-from random import randint
+from random import choice
 import requests
 from lxml import html
 from urllib.parse import urlparse
@@ -45,8 +45,7 @@ class GithubWebSearch:
         :return: random proxy dict for requests proxy keyword argument
         """
         if self.proxies:
-            proxy_index = randint(0, len(self.proxies) - 1)
-            return {'https': self.proxies[proxy_index]}
+            return {'https': choice(self.proxies)}
 
     def make_search(self):
         """

@@ -2,6 +2,7 @@ import pytest
 import json
 import requests_mock
 import os
+from crawler import GithubWebSearch
 
 DIR = os.path.dirname(__file__)
 
@@ -14,7 +15,7 @@ TESTS_HTTP_MAPPER ={
 }
 
 
-from crawler import GithubWebSearch
+
 
 def load_test_data(filename):
 	with open(os.path.join(DIR, f'data/{filename}')) as fd:
@@ -96,7 +97,7 @@ def test_repositories_with_extra(requests_mock):
 		'repos_w_extra.json',
 		(
 			'https://github.com/search?p=1&q=openstack+nova+css&type=Repositories',
-		 	'https://github.com/michealbalogun/Horizon-dashboard',
+			'https://github.com/michealbalogun/Horizon-dashboard',
 			'https://github.com/atuldjadhav/DropBox-Cloud-Storage',
 		),
 	)
